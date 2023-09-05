@@ -1,0 +1,13 @@
+worker
+.pytest_cache
+.vscode
+.DS_Store
+*.whl
+config.yml
+.env
+*.log
+__pycache__
+
+
+.env-example
+config-example.yml
