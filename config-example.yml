@@ -1,0 +1,71 @@
+queues:
+  - queue_name: queue1
+    tags: 
+      - tag1
+      - tag2
+    schemas:
+      - stringexample:
+          type: string
+          match: \d+
+        integerexample:
+          type: integer
+          lt: 6
+          gt: 4
+        floatexample:
+          type: float
+          lt: 6
+          gt: 4
+        booleanexample:
+          type: boolean
+        characterexample:
+          type: character
+        anyexample:
+          type: any
+  
+  - queue_name: queue2
+    tags: 
+      - tag3
+      - tag4
+    schemas:
+      - stringarrayexample:
+          type: string[]
+          match: \d+
+        integerarrayexample:
+          type: integer[]
+          lt: 6
+          gt: 4
+        floatarrayexample:
+          type: float[]
+          lt: 6
+          gt: 4
+        booleanarrayexample:
+          type: boolean[]
+        characterarrayexample:
+          type: character[]
+        anyarrayexample:
+          type: any[]
+  
+  - queue_name: queue3
+    tags:
+      - tag5
+      - tag6
+    schemas:
+      - dictionaryexample:
+          type: dictionary
+          inner_schema:
+            stringexample:
+              type: string
+              match: .*
+      - anyexample:
+        type: any
+
+
+# Remote git repo
+# worker:
+#   url: https://github.com/yotamefr/404-repo-doesnt-exist
+#   username: yotamefr
+#   password: bro you really thought I'd put my token here
+
+# Local directory
+# worker:
+#   path: ./worker
