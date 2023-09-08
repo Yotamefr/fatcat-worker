@@ -57,7 +57,7 @@ queues:
               type: string
               match: .*
       - anyexample:
-        type: any
+          type: any
 
 
 # Remote git repo
@@ -67,5 +67,5 @@ queues:
 #   password: bro you really thought I'd put my token here
 
 # Local directory
-# worker:
-#   path: ./worker
+worker:
+   path: ./worker
