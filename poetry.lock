@@ -2,13 +2,13 @@
 
 [[package]]
 name = "aio-pika"
-version = "9.2.2"
+version = "9.2.3"
 description = "Wrapper around the aiormq for asyncio and humans"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "aio_pika-9.2.2-py3-none-any.whl", hash = "sha256:d8ff6568b67bbf97b146d1fefe72a27c3124c777cb7a56b3353b12f9130e1111"},
-    {file = "aio_pika-9.2.2.tar.gz", hash = "sha256:bf6dcc60085f1bc0b49c7bda3055ef0d17c97a1a87f4d355e8a02c5bf4f1c5bb"},
+    {file = "aio_pika-9.2.3-py3-none-any.whl", hash = "sha256:19052829e1277965c85d461c830a1edb68ddd1020f9b4d6e297e886f2a3d073b"},
+    {file = "aio_pika-9.2.3.tar.gz", hash = "sha256:0ff258e2b62ceac6a52dfd03ea51e55a5ef499c5b308705a3a7cdd85f8a2d513"},
 ]
 
 [package.dependencies]
@@ -182,12 +182,13 @@ develop = false
 aio-pika = "^9.2.1"
 elasticsearch-logging-handler = {git = "https://github.com/Yotamefr/python-elasticsearch-logging"}
 motor = "^3.2.0"
+typing-extensions = "^4.7.1"
 
 [package.source]
 type = "git"
 url = "https://github.com/Yotamefr/fatcat-utils"
 reference = "dev"
-resolved_reference = "991027ae62c2d73b594df9692f6d4a491d22d1e2"
+resolved_reference = "89ab6c4b8597833509f2fa0dd4a1f6189dbb1c9f"
 
 [[package]]
 name = "gitdb"
@@ -205,17 +206,20 @@ smmap = ">=3.0.1,<6"
 
 [[package]]
 name = "gitpython"
-version = "3.1.35"
+version = "3.1.36"
 description = "GitPython is a Python library used to interact with Git repositories"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "GitPython-3.1.35-py3-none-any.whl", hash = "sha256:c19b4292d7a1d3c0f653858db273ff8a6614100d1eb1528b014ec97286193c09"},
-    {file = "GitPython-3.1.35.tar.gz", hash = "sha256:9cbefbd1789a5fe9bcf621bb34d3f441f3a90c8461d377f84eda73e721d9b06b"},
+    {file = "GitPython-3.1.36-py3-none-any.whl", hash = "sha256:8d22b5cfefd17c79914226982bb7851d6ade47545b1735a9d010a2a4c26d8388"},
+    {file = "GitPython-3.1.36.tar.gz", hash = "sha256:4bb0c2a6995e85064140d31a33289aa5dce80133a23d36fcd372d716c54d3ebf"},
 ]
 
 [package.dependencies]
 gitdb = ">=4.0.1,<5"
+
+[package.extras]
+test = ["black", "coverage[toml]", "ddt (>=1.1.1,!=1.4.3)", "mypy", "pre-commit", "pytest", "pytest-cov", "pytest-sugar", "virtualenv"]
 
 [[package]]
 name = "idna"
