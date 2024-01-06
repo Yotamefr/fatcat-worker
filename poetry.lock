@@ -188,7 +188,7 @@ typing-extensions = "^4.7.1"
 type = "git"
 url = "https://github.com/Yotamefr/fatcat-utils"
 reference = "dev"
-resolved_reference = "c120078f29f4a4bfa4b22ce71e3b34ff39accaf3"
+resolved_reference = "ff2806402d4a42da4be9cc6183819a86d9d96082"
 
 [[package]]
 name = "gitdb"
